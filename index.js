@@ -63,7 +63,7 @@ hexo.extend.filter.register('after_post_render', function (data) {
                             if (src.indexOf('/') > -1) {
                                 src = src.substring(src.lastIndexOf('/') + 1);
                             }
-                            $(this).attr('src', root + link + '/' + src);
+                            $(this).attr('src', root + link + src);
                         }
                     } else {
                         $(this).attr('src', root + link + src);
